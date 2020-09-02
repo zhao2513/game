@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.score{
+    text-align: center;
+}
+.demo{
+    width: 800px;
+    height: 600px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    margin:10px auto;
+}
+.sky{
+    background-image: url('./img/sky.png');
+    width: 1600px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    
+}
+.land{
+    background-image: url('./img/land.png');
+    width: 1600px;
+    height: 112px;
+    position: absolute;
+    bottom: 0;
+}
+.demo  .swing0{
+    background-position: -8px -10px;
+}
+.demo  .swing1{
+    background-position: -60px -10px;
+}
+.demo  .swing2{
+    background-position: -113px -10px;
+}
+.bird{
+    background-image: url('./img/bird.png');
+    width: 33px;
+    height: 26px;
+    left: 150px;
+    top: 150px;
+    position: absolute;
+}
+
+.pipe{
+    position: absolute;
+    height: 100px;
+    width: 52px;
+    left: 500px;
+}
+
+.pipeUp{
+    top: 0;
+    background-position: bottom;
+    background-image: url('./img/pipeUp.png');
+}
+.pipeDown{
+    bottom: 112px;
+    background-position: top;
+    background-image: url('./img/pipeDown.png');
+}

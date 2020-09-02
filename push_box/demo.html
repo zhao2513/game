@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #game {
+            position: relative;
+            margin: 20px auto;
+        }
+        
+        #game .item {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+        }
+        
+        .wall {
+            background-image: url('./imgs/wall.jpg');
+        }
+        
+        .box {
+            background-image: url('./imgs/box.png');
+        }
+        
+        .player {
+            background-image: url('./imgs/player.png');
+            background-size: cover;
+        }
+        
+        .overBox {
+            background-image: url('./imgs/over_box.png');
+        }
+        
+        .overBoxPoint {
+            border: 2px solid rgb(24, 151, 24);
+            /* 设置下面的属性之后，宽高影响的范围是边框盒 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game">
+        <div class=""></div>
+        <div class="wall item"></div>
+        <div class="item box"></div>
+    </div>
+    <button id="btn" style="display: block;margin: 0 auto;">重来</button>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
